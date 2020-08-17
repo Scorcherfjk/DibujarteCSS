@@ -1,0 +1,86 @@
+.body-bottom {
+  display: flex;
+  width: 100px;
+  justify-content: space-evenly;
+  top: -10px;
+}
+
+.leg .foot {
+  height: 30px;
+  width: 12px;
+  background-color: #BDBEC0;
+}
+
+.leg .first {
+  height: 30px;
+  width: 20px;
+  background-color: azure;
+  border-radius: 4px;
+}
+
+.leg .first::before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  bottom: -20px;
+  left: -2px;
+  height: 10px;
+  width: 24px;
+  background-color: #cccccc;
+  border-radius: 50px;
+  z-index: 8;
+}
+
+.leg .second {
+  height: 35px;
+  width: 20px;
+  background-color: azure;
+  border-radius: 8px;
+}
+
+.leg .second::before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  bottom: -20px;
+  left: -2px;
+  height: 8px;
+  width: 24px;
+  background-color: #cccccc;
+  border-radius: 50px;
+  z-index: 8;
+}
+
+/* .leg.right-leg .second {
+  transform: rotate(12deg);
+} */
+
+.right-leg {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.right-leg .foot {
+  position: relative;
+  border-radius: 0px 10px 0px 0px;
+  transform: rotate(-90deg);
+  top: -10px;
+  left: -2px;
+}
+
+/* .leg.left-leg .second {
+  transform: rotate(-12deg);
+} */
+
+.left-leg {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.left-leg .foot {
+  position: relative;
+  border-radius: 10px 0px 0px 0px;
+  transform: rotate(90deg);
+  top: -10px;
+  left: 9px;
+}

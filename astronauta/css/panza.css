@@ -1,0 +1,36 @@
+.panza {
+  height: 70px;
+  width: 60px;
+  background-color: #E6E6E6;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 10;
+  border-top: #CCC solid 5px;
+  border-bottom: #CCC solid 5px;
+}
+
+.panza div {
+  background-color: #BDBEC0;
+}
+
+.panza .screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+}
+
+.panza .screen .animate {
+  animation: all 3s ease-in-out;
+}
+
+.panza .belt {
+  height: 10px;
+  width: 100%;
+}
+
